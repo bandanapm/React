@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <!-- this will give you the entire react libraries -->
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <!-- React dom is excually that we need everthing to add react library to the page-->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> <!--bable that is used to make html work as a js-->
+
+    <title>React</title>
+</head>
+
+<body>
+    <div id="root"></div>
+    <h1>Getting Started with react js</h1>
+    <script type="text/babel">
+        let haha = "🤣";
+        let name = "Bandana"
+        ReactDOM.render(
+            <ul>
+                <li> {haha} </li>
+                <li> 💕 </li>
+                <li> 🙌 </li>
+                <li> {name.toUpperCase()} </li>
+                <li> {name.length} </li>
+            </ul>,
+            document.getElementById("root")
+        );
+
+    </script>
+</body>
+
+</html>
